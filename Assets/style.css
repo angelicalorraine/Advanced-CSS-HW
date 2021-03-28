@@ -1,0 +1,187 @@
+:root {
+  --main-color: rgb(182, 233, 253);
+  --me-margin: 40px;
+  --font-color: #373a3c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.3;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1%;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.mainnav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+/* Top section */
+.main {
+  margin: 0px;
+  background-color: var(--main-color);
+}
+
+h1 {
+  font-family: Bebas Neue, cursive;
+  font-size: 55px;
+  color: var(--font-color);
+  margin: 0px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  margin: 10px;
+}
+.rowmain {
+  display: flex;
+}
+
+p {
+  text-align: center;
+  margin: 0px;
+}
+
+/* Image of yourself*/
+
+.leftmain {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+/* Personal information*/
+
+.rightmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-right: 4rem;
+}
+
+/* social app section */
+.social {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.socialicon {
+  max-width: 50%;
+  height: auto;
+}
+
+/* self image*/
+.gel {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+#projects {
+  margin: 0rem 10rem 2rem 10rem;
+}
+
+.projectrow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.project-column {
+  flex: 0 1 80%;
+  background-color: #f8f9f6;
+  transition: flex-basis 500ms linear;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 15px;
+
+  border: 3px solid rgb(182, 233, 253);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+/*project image*/
+.image-card {
+  max-width: 90%;
+  height: auto;
+  margin: 15px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.15);
+  border: 3px solid rgba(131, 216, 250, 0.877);
+}
+
+.aboutme {
+  margin: 0rem 5rem 2rem 5rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* design badge icons*/
+.badgeicon {
+  width: 215px;
+  height: 215px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .project-column {
+    flex: 1 0 40%;
+    max-width: 40%;
+  }
+}
